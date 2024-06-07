@@ -1,0 +1,93 @@
+body {
+	Color:black; background-image: url('../images/Plage.jpg');background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h1 {
+	text-align:Center; Color:White; front-size:120px
+}
+p {
+  font-size:20px }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #129dddef;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #088fdd;
+}
+
+div{
+  text-align: center;
+}
+
+.h2tmk{
+  text-align:Center;
+}
+.h2ktm{
+  Color:rgba(255, 255, 255, 0.767)
+}
+.h3tkm{
+  Color:rgba(255, 255, 255, 0.76)
+}
+.ptmk{
+  background-color: rgba(127, 246, 255, 0.589);
+  width: fit-content;
+  text-align: left;
+}
+
+.image-container {
+  display: flex;
+  overflow-x: scroll; /* Permet le défilement horizontal */
+}
+.image-container img {
+  width: 400px;
+  height: 300px;
+  margin-right: 10px; /* Espacement entre les images */
+}
+/* CSS ADAPTATIF PAR TAILLE D'ÉCRAN / RESPONSIVE CSS */
+/* Grand bureau */
+@media (min-width: 1200px) { 
+  body    {
+  }
+}
+
+/* Tablette portrait vers paysage et bureau */
+@media (min-width: 768px) and (max-width: 1199px) { 
+  body    {
+      background-color: rgb(128, 0, 128);
+  }
+}
+
+/* Téléphone paysage vers tablette portrait */
+@media (max-width: 767px) { 
+  body    {
+      background-color: rgb(0, 0, 255);
+  }
+}
+
+/* Téléphones paysage et vers le bas */
+@media (max-width: 480px) { 
+  body    {
+      background-color: rgb(255, 0, 0);
+  }
+  li {
+    float: none;
+  }
+}
